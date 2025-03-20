@@ -1,11 +1,15 @@
+import styles from "./FriendList.module.css";
+
 const FriendListItem = ({ friend }) => {
     const { avatar, name, isOnline } = friend;
 
     return (
-        <div>
-            <img src={avatar} alt="Avatar" width="48" />
-            <p>{name}</p>
-            <p style={{ color: isOnline ? "green" : "red" }}>{isOnline ? "Online" : "Offline"}</p>
+        <div className={styles.friendsItem}>
+            <img className={styles.friendsImage} src={avatar} alt="Avatar" width="48" />
+            <p className={styles.friendsName}>{name}</p>
+            <p className={isOnline ? styles.isOnline : styles.isOffline}>
+                {isOnline ? "Online" : "Offline"}
+            </p>
         </div>
     );
 };

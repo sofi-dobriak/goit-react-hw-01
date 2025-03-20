@@ -1,9 +1,10 @@
 import Profile from "./components/Profile/Profile";
-import FriendList from "./components/FriendList/FriendList";
-import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import userData from "./json-data/userData.json";
+import FriendList from "./components/FriendList/FriendList";
 import friends from "./json-data/friends.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import transactions from "./json-data/transactions.json";
+import "modern-normalize";
 
 function App() {
     return (
