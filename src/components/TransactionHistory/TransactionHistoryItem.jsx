@@ -1,5 +1,3 @@
-import styles from "./TransactionHistory.module.css";
-
 const TransactionHistoryItem = ({ item }) => {
     const { type, amount, currency } = item;
 
